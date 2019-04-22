@@ -18,7 +18,7 @@ class App extends Component {
                   <Link to="/books">Books</Link>
                 </li>
                 <li>
-                  <Link to="/books/1">Book</Link>
+                  <Link to="/books/1">Book Details</Link>
                 </li>
               </ul>
             </nav>

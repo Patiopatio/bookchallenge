@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 
 class BookList extends Component {
   constructor(props) {
@@ -7,12 +8,12 @@ class BookList extends Component {
       books: [{
         title: "bla",
         ISBN: 1
-      }],
-      books: [{
+      },
+      {
         title: "ble",
         ISBN: 2
-      }],
-      books: [{
+      },
+      {
         title: "blo",
         ISBN: 3
       }],
@@ -26,6 +27,11 @@ class BookList extends Component {
       return (
         <div>
           <h2>Books</h2>
+            {this.state.books.map((book) =>
+              <div>{book.title}  - {book.ISBN}
+                <Link to="/books/1">Book1</Link>
+              </div>
+            )}
         </div>
       )
     }
