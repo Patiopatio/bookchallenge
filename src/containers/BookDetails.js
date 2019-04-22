@@ -7,6 +7,10 @@ class BookDetails extends Component {
       book: {
         title: 'title ',
         ISBN: ' 647h',
+        evaluations: [{
+          rating: 4,
+          review: "good",
+        }]
       }
     }
   }
@@ -17,7 +21,12 @@ class BookDetails extends Component {
             Book Details
           </h1>
           <div>
-          {this.state.book.title}
+            {this.state.book.title}
+          </div>
+          <div>
+            {this.state.book.evaluations.map((evaluation) =>
+              <div>{evaluation.rating} - {evaluation.review}</div>
+            )}
           </div>
         </div>
       )
