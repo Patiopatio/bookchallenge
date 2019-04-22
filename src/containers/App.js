@@ -4,6 +4,7 @@ import CustomNavbar from '../components/CustomNavbar';
 import { BrowserRouter as Router, Route, Link, Switch} from "react-router-dom";
 import BookList from './BookList';
 import BookDetails from './BookDetails';
+import User from './User';
 
 class App extends Component {
   render() {
@@ -25,7 +26,9 @@ class App extends Component {
             <Switch>
               <Route path="/books/1" component={BookDetails} />
               <Route path="/books" component={BookList} />
+              <Route path="/user" component={User} />
               <Route component={BookList} />
+
             </Switch>
           </div>
         </Router>
