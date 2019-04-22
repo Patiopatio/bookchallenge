@@ -5,6 +5,9 @@ import { BrowserRouter as Router, Route, Link, Switch} from "react-router-dom";
 import BookList from './BookList';
 import BookDetails from './BookDetails';
 import User from './User';
+import BookAdd from './BookAdd';
+import Login from './Login';
+import Register from './Register';
 
 class App extends Component {
   render() {
@@ -27,6 +30,9 @@ class App extends Component {
               <Route path="/books/1" component={BookDetails} />
               <Route path="/books" component={BookList} />
               <Route path="/user" component={User} />
+              <Route path="/bookAdd" component={BookAdd} />
+              <Route path="/login" component={Login} />
+              <Route path="/register" component={Register} />
               <Route component={BookList} />
 
             </Switch>
