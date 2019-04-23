@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Patiopatio/bookchallenge/precache-manifest.53732ed476399d706b32be7234b9947a.js"
+  "/bookchallenge/precache-manifest.4ac5ac65579178fce94cc320079ff3cc.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/Patiopatio/bookchallenge/index.html", {
+workbox.routing.registerNavigationRoute("/bookchallenge/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
