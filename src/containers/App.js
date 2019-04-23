@@ -17,6 +17,7 @@ class App extends Component {
     return (
       <div className="App">
         <CustomNavbar />
+        <div className="mb-5"></div>
         <Container>
           <Router>
             <div>
@@ -31,6 +32,7 @@ class App extends Component {
               </Switch>
             </div>
           </Router>
+          <div className="mb-5"></div>
         </Container>
       </div>
     );
