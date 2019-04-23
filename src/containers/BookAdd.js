@@ -9,16 +9,17 @@ class BookAdd extends Component {
     this.state = {
       bookToAdd: {
         title: '',
-        ISBN: '',
+        isbn: '',
       }
     }
   }
 
   handleChange = event => {
       const {name, value} = event.target
+      let book = this.state.bookToAdd;
+      book[name] = value
       this.setState ({
-        bookToAdd: {[name]: value,}
-
+        bookToAdd: book
       })
     }
     addBook = () => {
@@ -41,8 +42,7 @@ class BookAdd extends Component {
               <Input
                 type="text"
                 name="title"
-                value={this.state.bookToAdd.title}
-                onchange={this.handelChange}
+                onChange={this.handleChange}
                 placeholder="Enter the title here"
                 id="title" />
             </FormGroup>
@@ -51,9 +51,8 @@ class BookAdd extends Component {
               <Input
                 type="text"
                 name="isbn"
-                value={this.state.bookToAdd.isbn}
-                onchange={this.handelChange}
-                placeholder="978-1-56619-909-4 "
+                onChange={this.handleChange}
+                placeholder="e.g. 978-1-56619-909-4 "
                 id="isbn" />
             </FormGroup>
             <input type="button"

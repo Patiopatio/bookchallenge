@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link, Switch} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import {Container} from 'reactstrap';
 
 import './App.css';
@@ -17,7 +17,7 @@ class App extends Component {
     return (
       <div className="App">
         <CustomNavbar />
-        <div className="mb-5"></div>
+        <div className="mb-1"></div>
         <Container>
           <Router>
             <div>

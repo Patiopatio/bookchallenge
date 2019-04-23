@@ -9,7 +9,7 @@ class Book extends Component {
       <Card>
         <CardImg top width="100%" src={bookCover} alt="No cover available" />
         <CardBody>
-          <CardTitle classname="front-weight-bold">{this.props.book.title}</CardTitle>
+          <CardTitle className="front-weight-bold">{this.props.book.title}</CardTitle>
           <CardSubtitle>ISBN: {this.props.book.isbn}
           </CardSubtitle>
           <Link to="/books/1">See Evaluations</Link>

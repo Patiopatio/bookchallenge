@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react'
-import {Navbar, NavbarBrand, Collapse, NavbarToggler, Nav, NavItem, NavLink, UncontrolledDropdown,
-DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import {Navbar, NavbarBrand, Collapse, NavbarToggler, Nav, NavItem, NavLink } from 'reactstrap';
 
 class CustomNavbar extends Component {
   constructor(props) {
@@ -32,7 +30,7 @@ class CustomNavbar extends Component {
                 <NavLink href="/bookAdd">Add Book</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/user">User</NavLink>
+                <NavLink href="/user">Your Profile</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/login">Login</NavLink>

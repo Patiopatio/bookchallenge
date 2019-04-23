@@ -1,7 +1,4 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
-import {Card, CardImg, CardBody, CardTitle, CardSubtitle} from 'reactstrap';
-import bookCover from '../images/book1.jpeg';
 import Book from '../components/Book';
 
 

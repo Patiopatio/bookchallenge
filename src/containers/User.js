@@ -31,22 +31,22 @@ class User extends Component {
   render() {
     return (
       <div>
-        <h2>User</h2>
+        <h2>Your Profile</h2>
         <Row>
-        <Col>
+        <div className="col-xs-12 col-sm-6">
           <div className="card-deck">
             {this.state.books.map((book, index) =>
               <Book book={book} key={index} />
             )}
           </div>
-        </Col>
-        <Col>
+        </div>
+        <div className="col-xs-12 col-sm-6">
           {this.state.evaluations.map((evaluation, index) =>
             <Col xs="12" key={index} className="mt-4">
               <Evaluation evaluation={evaluation} />
             </Col>
             )}
-        </Col>
+        </div>
         </Row>
 
       </div>
