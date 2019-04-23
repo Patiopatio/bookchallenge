@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import {Card, CardImg, CardBody, CardTitle, CardSubtitle} from 'reactstrap';
 import bookCover from '../images/book1.jpeg';
+import Book from '../components/Book';
+
 
 class BookList extends Component {
   constructor(props) {
@@ -28,15 +30,7 @@ class BookList extends Component {
           <h2>Books</h2>
           <div className="card-deck">
             {this.state.books.map((book, index) =>
-              <Card key={index}>
-                <CardImg top width="100%" src={bookCover} alt="No cover available" />
-                <CardBody>
-                  <CardTitle classname="front-weight-bold">{book.title}</CardTitle>
-                  <CardSubtitle>ISBN: {book.isbn}
-                  </CardSubtitle>
-                  <Link to="/books/1">See Evaluations</Link>
-                </CardBody>
-              </Card>
+              <Book book={book} key={index} />
             )}
           </div>
         </div>

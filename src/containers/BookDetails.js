@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 import {Row, Col, Media, FormGroup, Label, Input} from 'reactstrap';
+import Evaluation from "../components/Evaluation"
 
 import bookCover from "../images/book1.jpeg";
 import userCover from "../images/user1.png";
+
 
 
 class BookDetails extends Component {
@@ -86,18 +88,7 @@ class BookDetails extends Component {
         <Row>
           {this.state.book.evaluations.map((evaluation, index) =>
             <Col xs="12" key={index} className="mt-4">
-              <Media>
-                <Media left href="#">
-                  <Media object src={userCover} alt=""
-                    className="rounded"/>
-              </Media>
-              <Media body>
-                <Media heading>
-                    Rating: {evaluation.rating} / 5
-                </Media>
-                {evaluation.review}
-                </Media>
-              </Media>
+              <Evaluation evaluation={evaluation} />
             </Col>
             )}
           </Row>

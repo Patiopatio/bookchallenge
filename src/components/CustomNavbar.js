@@ -29,9 +29,6 @@ class CustomNavbar extends Component {
                 <NavLink href="/books">Books</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/books/1">Book Details</NavLink>
-              </NavItem>
-              <NavItem>
                 <NavLink href="/bookAdd">Add Book</NavLink>
               </NavItem>
               <NavItem>
