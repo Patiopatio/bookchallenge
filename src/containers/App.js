@@ -24,6 +24,15 @@ class App extends Component {
                 <li>
                   <Link to="/books/1">Book Details</Link>
                 </li>
+                <li>
+                  <Link to="/user">User</Link>
+                </li>
+                <li>
+                  <Link to="/login">Login</Link>
+                </li>
+                <li>
+                  <Link to="/register">Register</Link>
+                </li>
               </ul>
             </nav>
             <Switch>
